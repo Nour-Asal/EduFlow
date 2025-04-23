@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Organizer</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Study Organizer</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#resources">Resources</a>
+            <a href="#stats">Statistics</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Your Study Organizer</h1>
+        <p>Organize all your learning resources in one place!</p>
+    </div>
+
+    <!-- Upload Section -->
+    <div class="upload-section">
+        <h2>Upload a Resource</h2>
+        <label for="fileInput">Choose an image or video:</label>
+        <input type="file" id="fileInput" accept="image/*,video/*">
+        <button onclick="uploadResource()">Upload</button>
+    </div>
+
+    <!-- Resources Section -->
+    <div class="resources" id="resources">
+        <h2>Your Learning Resources</h2>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search resources..." onkeyup="filterResources()">
+        </div>
+        <div class="resource-card" data-category="courses">
+            <h3>Python for Beginners</h3>
+            <p>A beginner's course to learn Python programming.</p>
+            <a href="#" target="_blank">Visit Resource</a>
+        </div>
+        <div class="resource-card" data-category="articles">
+            <h3>Cybersecurity Article</h3>
+            <p>An essential article on cybersecurity topics.</p>
+            <a href="#" target="_blank">Visit Resource</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Study Organizer. All rights reserved.</p>
+    </div>
+
+    <script src="myscript.js"></script>
+
+</body>
+
+</html>
